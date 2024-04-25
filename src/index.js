@@ -1,14 +1,48 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Home from './pages/home';
 import reportWebVitals from './reportWebVitals';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme({
+  typography: {
+    banner: {
+      fontSize: '20px',
+      fontWeight: 500,
+      fontFamily: 'Cormorant Garamond, serif',
+      color: '#7a413b',
+      fontStyle: 'italic'
+    },
+    paragraphHeading: {
+      fontSize: '30px',
+      fontWeight: 700,
+      fontFamily: 'Cormorant Garamond, serif',
+      color: '#7a413b',
+      fontStyle: 'italic'
+    },
+    paragraphContent: {
+      fontSize: '16px',
+      fontWeight: 500,
+      fontFamily: 'Roboto, serif',
+      color: '#322C2B'
+    }
+  },
+  palette: {
+    primary: {
+      main: '#2196f3',
+    },
+    secondary: {
+      main: '#f50057',
+    },
+  },
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <ThemeProvider theme={theme}>
+    <Home />
+  </ThemeProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
