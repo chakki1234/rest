@@ -1,10 +1,33 @@
-/* Navbar CSS */
-/* .navbar-container{
+/* General CSS */
+.body{
+    height: 100vh;
+}
+
+.content-container{
+    height: calc(100vh - 180px);
+    overflow: auto;
+}
+
+.bg-img-container{
     position: fixed;
-    top: 0;
+    top: calc(180px);
     left: 0;
-    z-index: 1;
-} */
+    width: 100%;
+    height: calc(100vh - 180px);
+    z-index: -1; 
+}
+
+.bg-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Navbar CSS */
+.navbar-container{
+    height: 180px;
+    background-color: #fff;
+}
 
 .navBar-logo{
     width: 25% !important;
@@ -45,7 +68,7 @@
 .billboard {
     position: relative;
     width: 100%;
-    height: 650px;
+    min-height: calc(100vh - 180px - 50px);
   }
   
 .billboard video {
@@ -68,21 +91,11 @@
     z-index: 1;
   } */
 
-/* Banner CSS */
-.banner{
-    height: 300px;
-    background-color: #FEFAF6;
-}
-
-.banner-inner{
-    width: 60%;
-    height: 25%;
-}
-
 /* Card CSS */
 .card{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
 }
 
 .card-inner{
@@ -101,6 +114,3 @@
 .card-image{
     width: 100%;
 }
-
-
-

@@ -3,10 +3,10 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import '../css/components.css'
 
-export default function Banner({ content }) {
+export default function Banner({ content, bgColor, textBoxBgColor, bannerHeight, textBoxHeight, textBoxWidth }) {
   return (
-        <Box display='flex' className='banner' justifyContent='center' alignItems='center'>
-            <Box display='flex' className='banner-inner'>
+        <Box display='flex' sx={{backgroundColor: bgColor, minHeight: bannerHeight}} justifyContent='center' alignItems='center'>
+            <Box display='flex' justifyContent='center' alignItems='center' sx={{height: textBoxHeight, width: textBoxWidth, backgroundColor: textBoxBgColor}}>
                 <Typography variant="banner" align='center'>
                     {content}
                 </Typography>
