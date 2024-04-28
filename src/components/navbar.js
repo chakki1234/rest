@@ -1,9 +1,9 @@
 import * as React from 'react';
-import logo from '../assets/images/sampleLogo.png'
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
+import logo from '../assets/images/sampleLogo.png'
 import '../css/components.css'
 
 export default function Navbar() {
@@ -16,7 +16,7 @@ export default function Navbar() {
         <Divider item orientation='horizontal' variant='middle' className='navBar-divider' flexItem />
         <Box item display='flex' flexDirection='row'>
           {navbarOptions.map((option, index) => (
-              <Typography key={index} className='navbar-options'>
+              <Typography key={index} variant='navbar' className='navbar-options'>
                 {option}
               </Typography>
             ))}

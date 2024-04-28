@@ -1,28 +1,3 @@
-/* General CSS */
-.body{
-    height: 100vh;
-}
-
-.content-container{
-    height: calc(100vh - 180px);
-    overflow: auto;
-}
-
-.bg-img-container{
-    position: fixed;
-    top: calc(180px);
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 180px);
-    z-index: -1; 
-}
-
-.bg-img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
 /* Navbar CSS */
 .navbar-container{
     height: 180px;
@@ -43,7 +18,6 @@
     padding-left: 20px !important;
     padding-right: 20px !important;
     margin-bottom: 25px !important;
-    color: #7a413b !important;
 }
 
 .navbar-options:hover {
@@ -61,12 +35,9 @@
 }
 
 /* Paragraph CSS */
-.paragraph-heading{
-    margin: 10px;
-}
-
-.paragraph-content{
-    margin: 10px;
+.paragraph{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .paragraph-text{
@@ -105,6 +76,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #fff;
+    width: 100%;
 }
 
 .card-inner{
@@ -113,11 +85,15 @@
 }
 
 .card-column-1{
-    margin-right: 10px;
+    margin-right: 15px;
+    width: 50%;
+    height: 100%;
 }
 
 .card-column-2{
-    margin-left: 10px;
+    margin-left: 15px;
+    width: 50%;
+    height: 100%;
 }
 
 .card-image{
@@ -128,6 +104,7 @@
 .footer{
     background-color: #fff;
     min-height: 200px;
+    width: 100%;
 }
 
 .footer-inner{

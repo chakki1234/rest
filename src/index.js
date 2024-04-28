@@ -7,6 +7,11 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const theme = createTheme({
   typography: {
+    navbar: {
+      fontSize: '16px',
+      fontWeight: 500,
+      color: '#7a413b',
+    },
     footer: {
       fontSize: '10px',
       fontWeight: 500,

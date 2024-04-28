@@ -1,9 +1,9 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import '../css/components.css'
-import logo from '../assets/images/sampleLogo.png'
 import Typography from '@mui/material/Typography';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import logo from '../assets/images/sampleLogo.png'
+import '../css/components.css'
 
 export default function Footer() {
   return (

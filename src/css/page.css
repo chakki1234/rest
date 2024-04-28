@@ -1,0 +1,23 @@
+.body{
+    height: 100vh;
+}
+
+.content-container{
+    height: calc(100vh - 180px);
+    overflow: auto;
+}
+
+.bg-img-container{
+    position: fixed;
+    top: calc(180px);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 180px);
+    z-index: -1; 
+}
+
+.bg-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
