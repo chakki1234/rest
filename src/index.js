@@ -7,6 +7,13 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const theme = createTheme({
   typography: {
+    footer: {
+      fontSize: '10px',
+      fontWeight: 500,
+      fontFamily: 'Cormorant Garamond, serif',
+      color: '#7a413b',
+      fontStyle: 'italic'
+    },
     banner: {
       fontSize: '20px',
       fontWeight: 500,

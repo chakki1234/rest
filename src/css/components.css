@@ -114,3 +114,23 @@
 .card-image{
     width: 100%;
 }
+
+/* Footer CSS */
+.footer{
+    background-color: #fff;
+    min-height: 200px;
+}
+
+.footer-inner{
+    width: 60%;
+    height: 100%; 
+}
+
+.footer-logo{
+    height: 20%;
+    width: 10%
+}
+
+.insta-logo{
+    color: #7a413b;
+}

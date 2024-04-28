@@ -5,6 +5,7 @@ import BillBoard from '../components/billboard';
 import Banner from '../components/banner';
 import Card from '../components/card';
 import Box from '@mui/material/Box';
+import Footer from '../components/footer'
 
 export default function Home() {
 
@@ -24,9 +25,6 @@ export default function Home() {
 
   return (
     <Grid container className='body' direction="column">  
-        <Box display='flex' className='bg-img-container'>
-          <img src={bgImgUrl} alt='' className='bg-img'></img>
-        </Box>
         <Navbar/>
         <Box display='flex' className='content-container' flexDirection='column'>
           <BillBoard videoUrl={videoUrl}/>
@@ -34,6 +32,10 @@ export default function Home() {
           <Card propsObj={CardProps}/>
           <Banner bannerHeight='calc(100vh - 180px)' bgColor='' textBoxBgColor='#FEFAF6' textBoxWidth='20%' textBoxHeight='15%' content={transparentBannerContent}/>
           <Banner bannerHeight='300px' bgColor='#FEFAF6' textBoxBgColor='' textBoxWidth='60%' textBoxHeight='25%' content={bannerContent}/>
+          <Footer/>
+        </Box>
+        <Box display='flex' className='bg-img-container'>
+          <img src={bgImgUrl} alt='' className='bg-img'></img>
         </Box>
     </Grid>
   );
