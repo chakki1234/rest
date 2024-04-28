@@ -30,7 +30,8 @@ export default function Home() {
     textBoxHeight: '20%',
     content: "Chef's Tasting Menu",
     placeButton: true,
-    buttonText: 'Click Here'
+    buttonText: 'Click Here',
+    borderRadius: '20px'
   }
   const BANNER_3_PROPS = {
     bannerHeight: '300px',

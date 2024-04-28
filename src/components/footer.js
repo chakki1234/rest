@@ -11,7 +11,7 @@ export default function Footer() {
             <Box display='flex' className='footer-inner' justifyContent='space-between' alignItems='center'>
                 <Box display='flex' alignItems='center'>
                     <img item src={logo} className='footer-logo' alt=''/> 
-                    <Typography variant="footer" align='center'>
+                    <Typography className='copyright-text' variant="footer" align='center'>
                         Copyright 2024 Anton's Restaurant
                     </Typography>
                 </Box>
