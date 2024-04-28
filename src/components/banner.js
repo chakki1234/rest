@@ -1,15 +1,21 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 import '../css/components.css'
 
-export default function Banner({ content, bgColor, textBoxBgColor, bannerHeight, textBoxHeight, textBoxWidth }) {
+export default function Banner({ bannerProps }) {
   return (
-        <Box display='flex' sx={{backgroundColor: bgColor, minHeight: bannerHeight}} justifyContent='center' alignItems='center'>
-            <Box display='flex' justifyContent='center' alignItems='center' sx={{height: textBoxHeight, width: textBoxWidth, backgroundColor: textBoxBgColor}}>
+        <Box display='flex' sx={{backgroundColor: bannerProps.bgColor, minHeight: bannerProps.bannerHeight}} justifyContent='center' alignItems='center'>
+            <Box display='flex' flexDirection='column' justifyContent='center' alignItems='center' sx={{height: bannerProps.textBoxHeight, width: bannerProps.textBoxWidth, backgroundColor: bannerProps.textBoxBgColor}}>
                 <Typography variant="banner" align='center'>
-                    {content}
+                    {bannerProps.content}
                 </Typography>
+                { bannerProps.placeButton ? (
+                    <Button className='banner-button' variant="outlined">{bannerProps.buttonText}</Button>
+                ) : (
+                    <></>
+                )}
             </Box>
         </Box>
     );
